@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(216, 156, 168) !important;
+}
+.slick-disabled {
+  @apply !hidden;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+.scrollable-container {
+  scrollbar-width: thin;
+  scrollbar-color: #0d9488 #edf2f7;
+}
+.scrollable-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+  background: #edf2f7;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background-color: #0d9488;
+  border-radius: 10px;
+  border: 2px solid #edf2f7;
+}
